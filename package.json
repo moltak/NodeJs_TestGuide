@@ -4,7 +4,9 @@
   "description": "AWS Codepipeline",
   "main": "index.js",
   "scripts": {
-    "test": "mocha -u tdd -R nyan"
+    "start": "node index.js",
+    "test": "mocha -u tdd",
+    "cov": "istanbul cover _mocha -- -u tdd"
   },
   "keywords": [
     "aws",
@@ -18,9 +20,9 @@
   },
   "devDependencies": {
     "chai": "^3.5.0",
-    "istanbul": "^0.4.3",
     "mocha": "^2.4.5",
     "should": "^8.3.0",
+    "istanbul": "^0.4.3",
     "supertest": "^1.2.0"
   }
 }

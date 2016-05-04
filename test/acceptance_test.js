@@ -1,17 +1,17 @@
 'use strict';
 
-let request = require('supertest');
-let should = require('should');
+var request = require('supertest');
+var should = require('should');
 
-let app = require('../index.js');
+var app = require('../index.js');
 
-describe('BDD style test', () => {
-	it("should print 'Hello World'", done => {
+describe('BDD style test', function () {
+	it("should print 'Hello World'", function (done) {
 		request(app)
 			.get('/')
 			.set('Content-Type', 'application/json')
 			.expect(200)
-			.end((err, result) => {
+			.end(function (err, result) {
 				should.not.exist(err);
 				result.text.should.equal('Hello World!');
 				done();
