@@ -1,0 +1,25 @@
+{
+  "name": "pipeline",
+  "version": "0.0.1",
+  "description": "AWS Codepipeline",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "aws",
+    "codepipeline"
+  ],
+  "author": "moltak",
+  "license": "MIT",
+  "dependencies": {
+    "co": "^4.6.0",
+    "express": "^4.13.4",
+  },
+  "devDependencies": {
+    "istanbul": "^0.4.3",
+    "mocha": "^2.4.5",
+    "should": "^8.3.0",
+    "supertest": "^1.2.0"
+  }
+}
