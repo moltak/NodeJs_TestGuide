@@ -13,7 +13,7 @@ describe('BDD style test', function () {
 			.expect(200)
 			.end(function (err, result) {
 				should.not.exist(err);
-				result.text.should.equal('Hello World!');
+				result.text.should.equal('Hello code states');
 				done();
 			});
 	});

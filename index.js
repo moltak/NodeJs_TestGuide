@@ -5,7 +5,7 @@ let express = require('express');
 let app = express();
 
 app.get('/', (req, res) => {
-  res.status(200).send('Hello World!');
+  res.status(200).send('Hello code states');
 });
 
 app.listen(port, () => {
