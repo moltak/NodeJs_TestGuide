@@ -1,0 +1,8 @@
+language: node_js
+before_script:
+  - npm install
+node_js:
+  - "5"
+script:
+  - ./node_modules/.bin/cucumber.js  
+  - ./node_modules/.bin/mocha -u tdd
